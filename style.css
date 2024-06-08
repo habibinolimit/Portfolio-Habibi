@@ -1,0 +1,801 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 12%;
+    background: rgba(0, 0, 0, 0.80);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: orangered;
+    text-shadow: 0 0 25px orangered, 0 0 50px orangered;
+    transform: scale(1.1);
+}
+
+span {
+    color: orangered;
+}
+
+/* Navbar Styles */
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+/* Contact Button Styles */
+.contact {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact:hover {
+    background-color: orangered;
+    box-shadow: 0 0 30px orangered;
+    color: white;
+}
+
+/* Home Section Styles */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 12% 0;
+}
+
+.home-content {
+    max-width: 600px;
+    margin-right: 50px;
+}
+
+.home-content h3 {
+    font-size: 42px;
+}
+
+.home-content h1 {
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.btn-box {
+    display: flex;
+    gap: 2em;
+}
+
+.btn-1 {
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-2 {
+    padding: 15px 28px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    background-color: white;
+    color: orangered;
+}
+
+.img-box img {
+    border-radius: 50%;
+    width: 300px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.section .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section .heading span {
+    color: #007BFF;
+}
+
+/* About Section Styles */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 12%;
+    background-color: rgb(241, 241, 241);
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-img {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-content .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content .heading span {
+    color: orangered;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: black;
+}
+
+.hard-skills {
+    margin-top: 20px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hard-skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.hard-skills ul {
+    display: block;
+    flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+    gap: 20px; /* Space between each skill item */
+    list-style-type: none;
+    padding: 0;
+}
+
+.hard-skills li {
+    display: block;
+    align-items: center;
+    font-size: 1.1rem;
+    gap: 10px; /* Space between icon and text */
+}
+
+.hard-skills li img {
+    width: 24px;
+    height: 24px;
+}
+
+.soft-skills {
+    margin-top: 20px;
+}
+
+.soft-skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.soft-skills ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.soft-skills li {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.dropbtn:hover {
+    background-color: darkorange;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.dropdown-content ul {
+    padding: 10px;
+}
+
+.dropdown-content ul li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.dropdown-content ul li:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+/* Experience Section Styles */
+.experience {
+    padding: 60px 0;
+    text-align: center;
+    background-color:  rgb(241, 241, 241);
+    color: #333;
+}
+
+.experience .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.experience-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Projects Container */
+.projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Project Card */
+.project-card {
+    flex: 1 1 30%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(255, 136, 0, 0.2);
+}
+
+/* Card Link */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Card Heading */
+.project-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Card Paragraph */
+.project-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Project Description (initially hidden) */
+.project-description {
+    display: none;
+}
+
+/* Education Section Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.education-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.heading span {
+    color: orangered; /* Example color, change as needed */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-container img {
+    width: 35%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+} */
+
+/* .footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+} */
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+} */
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* PROJECT 2 CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 12%;
+    background: rgba(0, 0, 0, 0.80);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header .logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.header .logo:hover {
+    color: orangered;
+    text-shadow: 0 0 25px orangered, 0 0 50px orangered;
+    transform: scale(1.1);
+}
+
+.header .logo span {
+    color: orangered;
+}
+
+.header .navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.header .navbar a:hover,
+.header .navbar a:active {
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+.header .contact {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.header .contact:hover {
+    background-color: orangered;
+    box-shadow: 0 0 30px orangered;
+    color: white;
+}
+
+/* Project Section Styles */
+.project {
+    padding: 80px 12%;
+    text-align: left;
+    background-color: #fff;
+    margin-top: 100px;
+}
+
+.project-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-content h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.project-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 12%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container p {
+    margin-bottom: 10px;
+}
+
+.footer-container .social-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.footer-container .social-links li {
+    display: inline-block;
+}
+
+.footer-container .social-links li a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.footer-container .social-links li a img:hover {
+    transform: scale(1.2);
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 5%;
+    }
+
+    .header .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .header .navbar a {
+        margin: 5px 0;
+    }
+
+    .project {
+        padding: 60px 5%;
+    }
+
+    .footer {
+        padding: 20px 5%;
+    }
+}
+.project-images {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.project-images img {
+    margin-right: 10px;
+    width: auto;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+}
+
+.card {
+    width: 300px;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card .image-box {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+.card .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s ease-in-out;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.card:hover img {
+    filter: grayscale(1) brightness(0.4);
+}
+
+.card:hover::after {
+    opacity: 1;
+    inset: 20px;
+}
+
+.content-team {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    transition: bottom 0.3s;
+}
+
+.card:hover .content-team {
+    bottom: 40px;
+}
+
+.content-team h2, .content-team p {
+    margin: 0;
+    color: white; /* Ensure the text is white */
+}
+
+/* Project Images Container */
+.project-images {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.project-images img {
+    margin-right: 10px; /* Tambahkan margin kanan */
+    margin-left: 10px; /* Tambahkan margin kiri */
+    margin-bottom: 10px; /* Tambahkan margin bawah */
+    height: 200px;
+    object-fit: cover;
+    border-radius: px;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: row; /* Mengatur arah ke horizontal */
+    justify-content: space-between; /* Mengatur agar kartu berada di antara */
+    margin-top: 20px;
+}
+
+.card {
+    width: 300px; /* Atur lebar kartu */
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 5px;
+}
+
+/* General Styles */
+
+
